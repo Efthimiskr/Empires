@@ -18,7 +18,7 @@ public class Player {
 	public void setPlayerName(String playerName) {
 		this.playerName = playerName;
 	}
-	public String getPlayerColor() {
+	public String getPlayerColor() { 
 		return playerColor;
 	}
 	public void setPlayerColor(String playerColor) {
