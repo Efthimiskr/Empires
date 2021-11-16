@@ -43,7 +43,7 @@ public class Function {
 		
 	}
 	
-	public void attack() { // The option of attack ( who; from where to where; ) //
+	public void attack() { // The option of attack ( from where to where; ) //
 	
 	}
 	
