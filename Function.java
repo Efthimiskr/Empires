@@ -4,10 +4,10 @@ public class Function {
 	
 	static Scanner keyboard = new Scanner(System.in);
 		
-	public static void gamestart() { // Starts the game with round 1 //
+	public static void gameStart() { // Starts the game with round 1 //
 		for(int i = 1;i <= 50; i++) { 
 			for(int j = 0; j <= 3; j++) {
-				System.out.println(Game.tablep[j].getPlayerName()+" is your turn to play"); 
+				System.out.println(GameApp.tablep[j].getPlayerName()+" is your turn to play"); 
 				
 				
 				
@@ -16,12 +16,12 @@ public class Function {
 				
 				
 				System.out.println("From where do you want to attack ?"); // Attack
-				String tempColor = Game.tablep[j].getPlayerColor(); // Attacker's color ( temporary )
+				String tempColor = GameApp.tablep[j].getPlayerColor(); // Attacker's color ( temporary )
 				ArrayList<String> alliedStates = new ArrayList<String>();
 				for(int k = 0; k <= 19; k++) {
-					if(tempColor.equals(Game.tabler[k].getRegionColor())) {
-						alliedStates.add(Game.tabler[k].getRegionName());
-						System.out.println(Game.tabler[k].getRegionName());						
+					if(tempColor.equals(GameApp.tabler[k].getRegionColor())) {
+						alliedStates.add(GameApp.tabler[k].getRegionName());
+						System.out.println(GameApp.tabler[k].getRegionName());						
 					}
 				}
 				
