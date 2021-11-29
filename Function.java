@@ -15,6 +15,8 @@ public class Function {
 				
 				
 				
+				
+				
 				System.out.println("From where do you want to attack ?"); // Attack
 				String tempColor = GameApp.tablep[j].getPlayerColor(); // Attacker's color ( temporary )
 				ArrayList<String> alliedStates = new ArrayList<String>();
@@ -26,16 +28,41 @@ public class Function {
 				}
 				
 				boolean flag = true; // Check valid input
+				String ras = null;
 				while(flag) {
-					String ra = keyboard.nextLine();
+					ras = keyboard.nextLine();
 					for(int counter = 0; counter <= alliedStates.size(); counter++) {
-						if(ra.equals(alliedStates.get(counter))) {
+						if(ras.equals(alliedStates.get(counter))) {
 							flag = false;
 							break;
 						}
 					}
 								
 				}
+				int ra = 0; // Attacking Region
+				for(int counter = 0; counter <= 19; counter++) {
+					if(ras.equals(GameApp.tabler[counter].getRegionName())) {
+						ra = counter;
+						break;
+						
+					}
+				}
+				
+				
+				
+				System.out.println("Where  do you want to attack ?"); // Defending Region
+			    System.out.println(GameApp.tabler[ra].getBorders());
+			    boolean flag = true;
+			    String rad = null;
+			    while()
+			    
+			    
+			    
+			    for(int counter = 0; counter <= 20; counter++) {
+			    	
+			    }
+				
+				
 			}
 		}
 	}
@@ -44,7 +71,7 @@ public class Function {
 		
 	}
 	
-	public void placeSoldiers() { // Players choose where to place their soldiers //
+	public void placeSoldiers(int s) { // Players choose where to place their soldiers //
 		
 	}
 	
